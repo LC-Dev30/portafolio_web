@@ -1,0 +1,347 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-color: #20264a;
+}
+
+.contenedor {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+    background-color: #20264a;
+    color: #fff;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    transition: top 0.7s;
+    z-index: 100;
+    backdrop-filter: blur(32px);
+}
+
+.nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    margin-top: 20px;
+}
+
+.title {
+    text-decoration: none;
+    color: #26c8dd;
+    margin-left: 7px;
+}
+
+
+.btn-open-toggle,
+.btn-close-toggle {
+    display: none;
+}
+
+.list-nav {
+    list-style: none;
+    display: flex;
+    gap: 17px;
+    margin-right: 8px;
+}
+
+.nav ul li a {
+    text-decoration: none;
+    /* color: rgb(66, 160, 236); */
+    color: rgb(245, 239, 239);
+    font-size: 14px;
+    font-weight: bold;
+    padding: 5px;
+}
+
+/* hover (a) */
+.nav ul li a:hover {
+    border-bottom: 3.5px solid #1b8c9b;
+    transition: border-bottom 0.2s;
+    color: #1b8c9b;
+}
+
+/**************************** MAIN ******************************** */
+
+.main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 13em;
+    margin-top: 150px;
+    align-items: center;
+}
+
+/****** PERFIL *******/
+
+.main .profile {
+    /* background-color: gray; */
+    width: 75%;
+    margin: 0 auto;
+    font-size: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+    padding: 8px;
+    /* background-color: #8892b0; */
+}
+
+.profile .saludo {
+    font-size: 1.4em;
+    font-weight: 800;
+    color: #8892b0;
+}
+
+.profile h1 {
+    font-size: 5em;
+    font-weight: 900;
+}
+
+.profile h3 {
+    display: flex;
+    font-size: 4em;
+    color: #8892b0;
+}
+
+.profile p {
+    width: 55%;
+    padding: 5px;
+    color: #8892b0;
+    font-weight: 800;
+    font-size: 1.1em;
+    line-height: 1.8;
+    border-left: 5px solid #1b8c9b;
+}
+
+ .btn-cv{
+    width: 15%;
+    text-decoration: none;
+    text-align: center;
+    font-weight: 900;
+    border: 1px solid #26c8dd;
+    border-radius: 5px;
+    color: #26c8dd;
+    padding: 13px;
+}
+
+.btn-cv:hover {
+    background-color: #485288fd;
+}
+
+.link {
+    color: #26c8dd;
+    text-decoration: none;
+}
+
+.link:hover {
+    text-decoration: underline;
+    transition: text-decoration 1.3s;
+}
+
+
+/****** SOBRE MI *****/
+
+.sobreMi {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    width: 70%;
+    margin: 0 auto;
+    /* background-color: #8892b0; */
+}
+
+.sobreMi h3 {
+    font-size: 28px;
+}
+
+.title-SobreMi {
+    display: flex;
+    align-items: center;
+    /* gap: 5px; */
+}
+
+.img-inicio {
+    width: 37%;
+    align-self: flex-end;
+    position: absolute;
+    right: 30px;
+    top: 50%;
+    margin-bottom: 100px;
+    background-color: #8892b0;
+}
+
+.sobreMi p {
+    width: 60%;
+    font-size: 17px;
+    font-weight: 600;
+    line-height: 1.6;
+    color: #8892b0;
+
+}
+
+/******** Habilidades *********/
+.Habilidades {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+}
+
+.ctn-icons {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.ctn-icons img {
+    width: 80px;
+}
+
+.Habilidades h2 {
+    font-size: 28px;
+}
+
+.iconos {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 25px;
+}
+
+.t-icon{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 700;
+    justify-content: center;
+}
+
+/* ******************** MOD MOBILE ********************************** */
+/* mod mobile */
+@media (max-width: 768px) {
+
+    .visibleMain{
+        display: none;
+    }
+
+    .list-nav {
+        width: 100%;
+        height: 100%;
+        background-color: #20264a;
+        position: fixed;
+        left: 0;
+        top: 0;
+        flex-direction: column;
+        align-items: center;
+        opacity: 0;
+        pointer-events: none;
+        transition: opacity 0.4s;
+    }
+
+    .header .list-nav li a {
+        line-height: 4;
+        color: #fff;
+    }
+
+    .btn-open-toggle {
+        display: block;
+        background-color: #20264a;
+        border: none;
+        font-size: 24px;
+    }
+
+    .btn-close-toggle {
+        display: block;
+        align-self: flex-end;
+        margin: 5px;
+        border: none;
+        font-size: 29px;
+        background-color: #20264a;
+    }
+
+    .navToggle {
+        opacity: 1;
+        pointer-events: all;
+    }
+
+    /* main mobile */
+
+    .img-inicio {
+        display: none;
+    }
+
+    .main {
+        width: 100%;
+        flex-wrap: nowrap;
+    }
+
+    .main .profile {
+        width: 100%;
+        align-items: flex-start;
+        padding: 15px;
+        font-size: 13px;
+    }
+
+    /* seccion perfil mobile */
+    .profile h1 {
+        font-size: 3.5em;
+    }
+
+    .profile h3 {
+        font-size: 3em;
+    }
+
+    .profile p {
+        width: 100%;
+        font-size: 1.3em;
+    }
+
+    .btn-cv {
+        width: 70%;
+    }
+
+    /* seccion acerca de mi -mobile- */
+
+    .sobreMi {
+        width: 100%;
+    }
+
+    .sobreMi p {
+        width: 100%;
+        align-items: flex-start;
+        padding: 10px;
+    }
+
+    /* seccion habilidades */
+
+    .Habilidades{
+        width: 100%;
+    }
+
+    .ctn-icons{
+        flex-wrap: wrap;
+        padding: 15px;
+    }
+
+    .t-icon img{
+        width: 60px;
+    }
+}
