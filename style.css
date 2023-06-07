@@ -83,7 +83,7 @@ body {
     align-items: center;
 }
 
-/****** PERFIL *******/
+/****** Seccion PERFIL *******/
 
 .main .profile {
     /* background-color: gray; */
@@ -151,7 +151,7 @@ body {
 }
 
 
-/****** SOBRE MI *****/
+/****** Seccion SOBRE MI *****/
 
 .sobreMi {
     display: flex;
@@ -191,7 +191,7 @@ body {
 
 }
 
-/******** Habilidades *********/
+/******** Seccion Habilidades *********/
 .Habilidades {
     width: 70%;
     display: flex;
@@ -232,6 +232,53 @@ body {
     font-size: 18px;
     font-weight: 700;
     justify-content: center;
+}
+
+/************************ Seccion Proyectos ***********************/
+.s_proyectos{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.lista_proyectos{
+   display: grid;
+   grid-template-columns: repeat(4,1fr);
+   gap: 15px;
+   list-style: none;
+}
+
+.lista_proyectos li{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:space-between;
+    width: 250px;
+    height: 250px;
+    background-color:#32395f;
+    border-radius: 13px;
+    padding: 5px;
+    cursor: pointer;
+}
+.lista_proyectos li h3{
+    text-align: center;
+    padding: 5px
+}
+
+.btn_proyecto{
+    width: 50%;
+    text-decoration: none;
+    text-align: center;
+    font-weight: 900;
+    border: 1px solid #26c8dd;
+    border-radius: 5px;
+    color: #26c8dd;
+    padding: 13px;
+}
+
+.btn_proyecto:hover{
+   background-color: #485288fd;
 }
 
 /* ******************** MOD MOBILE ********************************** */
