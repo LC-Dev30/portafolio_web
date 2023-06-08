@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
+    list-style: none;
 }
 
 body {
@@ -191,13 +192,14 @@ body {
 
 }
 
-/******** Seccion Habilidades *********/
+/******** Seccion Lenguajes y Bibliotecas *********/
 .Habilidades {
-    width: 70%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 10px;
+    background-color: #fff;
 }
 
 .ctn-icons {
@@ -215,6 +217,7 @@ body {
 
 .Habilidades h2 {
     font-size: 28px;
+    color: #26c8dd;
 }
 
 .iconos {
@@ -228,7 +231,7 @@ body {
     flex-direction: column;
     align-items: center;
     gap: 10px;
-    color: #fff;
+    color: black;
     font-size: 18px;
     font-weight: 700;
     justify-content: center;
@@ -244,9 +247,10 @@ body {
 
 .lista_proyectos{
    display: grid;
-   grid-template-columns: repeat(4,1fr);
+   grid-template-columns: repeat(4,minmax(150px,1fr));
    gap: 15px;
    list-style: none;
+   margin: 10px;
 }
 
 .lista_proyectos li{
@@ -254,16 +258,25 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content:space-between;
-    width: 250px;
-    height: 250px;
+    width: 290px;
+    height: 290px;
     background-color:#32395f;
     border-radius: 13px;
-    padding: 5px;
+    /* padding: 5px; */
     cursor: pointer;
+}
+
+.lista_proyectos li div{
+    width: 100%;
+    height: 150px;
+    background-size: 300px;
+    background-repeat: no-repeat;
+    background-color: rgba(0, 255, 255, 0.187);
 }
 .lista_proyectos li h3{
     text-align: center;
-    padding: 5px
+    padding: 5px;
+    margin-top: 150px;
 }
 
 .btn_proyecto{
@@ -275,10 +288,44 @@ body {
     border-radius: 5px;
     color: #26c8dd;
     padding: 13px;
+    margin: 10px;
 }
 
 .btn_proyecto:hover{
    background-color: #485288fd;
+}
+
+/* Seccion Contacto */
+.s_contacto h2{
+  margin: 18px;
+}
+
+.lista_contacto{
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.lista_contacto li strong{
+    color:#26c8dd;
+}
+
+/* Seccion Pie de pagina */
+footer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 150px;
+    background-color:#485288fd;
+}
+
+footer .lista_enlaces_footer li a{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    color: #fff;
+    text-decoration: none;
 }
 
 /* ******************** MOD MOBILE ********************************** */
@@ -391,4 +438,18 @@ body {
     .t-icon img{
         width: 60px;
     }
+
+    /*seccion de proyectos */
+    .lista_proyectos{
+        display: grid;
+        grid-template-columns: repeat(auto-fit,minmax(150px,1fr));
+        gap: 15px;
+        list-style: none;
+     }
+
+     /* Seccion Footer */
+     footer{
+        flex-direction: column;
+        gap: 30px;
+     }
 }
