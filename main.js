@@ -1,9 +1,8 @@
-//1* titulo de logo //
 let title = document.querySelector('.title');
 let body = document.getElementById("main")
 title.innerText = '<>Mi Portafolio</>';
 
-//2* Boton toggle al menu en modo mobile //
+// Boton toggle al menu en modo mobile //
 const nav = document.querySelector(".list-nav");
 const btnOpen = document.querySelector(".btn-open-toggle");
 const btnClose = document.querySelector(".btn-close-toggle")
@@ -16,7 +15,7 @@ function menuToggle() {
 btnOpen.addEventListener("click", menuToggle);
 btnClose.addEventListener("click", menuToggle);
 
-//#3 ocurtar menu al hacer scroll //
+//ocurtar menu al hacer scroll //
 function hacerScroll() {
     let captutarScroll = window.pageYOffset;
 
@@ -26,7 +25,7 @@ function hacerScroll() {
         if (captutarScroll >= actualScroll) {
 
             document.getElementById('menu').style.top = "0";
-            document.getElementById('menu').style.boxShadow = "1px 1px 10px 2px black";
+            document.getElementById('menu').style.boxShadow = ".1px .1px 10px .2px #121111a1";
         } else {
             document.getElementById('menu').style.top = "-100px"
         }

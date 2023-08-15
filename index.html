@@ -10,11 +10,12 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./variables.css">
 </head>
 
 <body>
 
-    <div class="contenedor">
+    < class="contenedor">
         <!-- header cabezera -->
         <header class="header" id="menu">
             <nav class="nav">
@@ -36,7 +37,7 @@
             <section class="profile">
                 <span class="saludo">Hola, mi nombre es</span>
                 <h1 class="nameDev">Leo Castillo.</h1>
-                <h3>Desarrollador web.</h3>
+                <h3 class="">Desarrollador de Software.</h3>
                 <p class="parrafo">
                     "Un buen desarrollador de software trabaja con disciplina y constancia desde el primer día."
                    <cite> - Omar Bradley -</cite>
@@ -53,29 +54,51 @@
                     <h3 id="acerca">Acerca de mí</h3>
                 </div>
                 <p>
-                    Hola soy Leo, y me encanta el desarrollo web me apasiona crear cosas dinámicas para la internet, 
-                    Me gusta estudiar, practicar todo lo relacionado a mi carrera, en mi tiempo libre me gusta ver películas, salir a caminar, jugar mi juego favorito
-                    Llevo varios años desarrollando y me ha parecido fascinante estar en este mundo maravilloso que es la programación. 
-
+                    ¡Hola! Soy Leo, un apasionado estudiante de ingeniería de software,
+                    mi visión es utilizar mi pasión por la ingeniería de software para crear soluciones que no solo sean efectivas desde el punto de vista técnico, sino también significativas desde la perspectiva de la experiencia del usuario. 
+                    <br>
+                    <br>
+                    Estoy emocionado por las oportunidades que el futuro tiene reservadas y ansío contribuir a proyectos desafiantes que hagan una diferencia real en el mundo digital.
+                    <br>   
+                    <br>  
+                    <strong>
+                        ¡Estoy listo para enfrentar nuevos desafíos y ser parte de un equipo apasionado por la innovación tecnológica! 
+                    </strong>
                 </p>
+
+                <!-- seccion tecnologias -->
+                <section class="seccion-tecnologias">
+                 <span>Algunas tecnologías que he estado trabajando:</span>
+                <section class="c-tecnologias">
+                    <!-- front end -->
+                    <div>
+                        <span>Frontend</span>
+                        <ul class="lista-tecnologias">
+                            <li>Javascript</li>
+                            <li>React</li>
+                            <li>TypeScript</li>
+                        </ul>
+                    </div>
+                    <!-- back end -->
+                    <div>
+                        <span>Backend</span>
+                        <ul class="lista-tecnologias">
+                            <li>Asp .NET</li>
+                            <li>Node con Express</li>
+                        </ul>
+                    </div>
+                    <!-- base de datos -->
+                    <div>
+                        <span>Base de datos</span>
+                        <ul class="lista-tecnologias">
+                            <li>SQL SERVER</li>
+                            <li>Mongo db</li>
+                        </ul>
+                    </div>
+                </section>
+                </section>
             </section>
 
-            <!-- seccion habilidades -->
-            <section class="Habilidades">
-                <h2 id="habilidades">Lenguajes y bibliotecas</h2>
-                <div class="ctn-icons">
-                    <div class="iconos">
-                        <div class="t-icon"><img src="./iconos/iconos de lenguajes/html5-brands.svg" alt="html">HTML</div>
-                        <div class="t-icon"><img src="./iconos/iconos de lenguajes/css3-alt-brands.svg" alt="css">CSS</div>
-                        <div class="t-icon"><img src="./iconos/iconos de lenguajes/js-brands.svg" alt="javascript">JAVASCRIPT</div>
-                    </div>
-                    <div class="iconos">
-                        <div class="t-icon"><img src="./iconos/iconos de lenguajes/bootstrap-brands (1).svg" alt="bootstrap">BOOTSTRAP</div>
-                        <div class="t-icon"><img src="./iconos/iconos de lenguajes/react-javascript-js-framework-facebook-svgrepo-com.svg" alt="react">REACT</div>
-                        <div class="t-icon"><img src="./iconos/iconos de lenguajes/git-square-brands.svg" alt="git">GIT</div>
-                    </div>
-                </div>
-            </section>
             <section class="s_proyectos">
                 <h2 id="experiencias">Proyectos</h2>
                 <ul class="lista_proyectos">
@@ -105,30 +128,23 @@
                     </li>
                 </ul>
             </section>
+
+            <!-- Footer -->
             <footer>
-                <section class="s_contacto">
-                    <h2 id="contacto">Contacto</h2>
-                    <ul class="lista_contacto">
-                        <li>
-                            <strong>Telefono:</strong>
-                            <span>809-430-0830</span>
-                        </li>
-                        <li>
-                            <strong>Correo Electronico:</strong>
-                            <span>cristomiroca05@gmail.com</span>
-                        </li>
-                    </ul>
+                <section class="seccion-contacto">
+                    <h2>¡Contáctame!"</h2>
+                    <article class="c-contacto">
+                       <div>
+                          <img src="./imagenes/telefono.png" alt="">
+                          <span>+1(829-430-0830)</span>
+                       </div>
+                       <div>
+                         <img src="./imagenes/email.png" alt="">
+                         <span>cristomiroca3005@gmail.com</span>
+                       </div>
+                    </article>
                 </section>
-                <ul class="lista_enlaces_footer">
-                    <li>
-                        <a href="#">privacidad</a></li>
-                    <li> 
-                       <a href="#">terminos</a>
-                    </li>
-                    <li>
-                       <a href="#">sobre mi</a>
-                    </li>
-                </ul>
+                <span>Diseñado y construido por Leo Castillo</span>
             </footer>
         </main>
     </div>

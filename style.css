@@ -3,11 +3,10 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
-    list-style: none;
 }
 
 body {
-    background-color: #20264a;
+    background-color: #0a192f;
 }
 
 .contenedor {
@@ -15,7 +14,7 @@ body {
     display: flex;
     flex-direction: column;
     gap: 100px;
-    background-color: #20264a;
+    background-color: #0a192f;
     color: #fff;
 }
 
@@ -27,6 +26,7 @@ body {
     transition: top 0.7s;
     z-index: 100;
     backdrop-filter: blur(32px);
+
 }
 
 .nav {
@@ -36,6 +36,7 @@ body {
     align-items: center;
     padding: 15px;
     margin-top: 20px;
+   
 }
 
 .title {
@@ -100,19 +101,20 @@ body {
 }
 
 .profile .saludo {
-    font-size: 1.4em;
+    font-size: 1.3em;
     font-weight: 800;
-    color: #8892b0;
+    color: #26c8dd;
 }
 
 .profile h1 {
     font-size: 5em;
     font-weight: 900;
+    color: #ccd6f6;
 }
 
 .profile h3 {
     display: flex;
-    font-size: 4em;
+    font-size: 3em;
     color: #8892b0;
 }
 
@@ -165,6 +167,7 @@ body {
 
 .sobreMi h3 {
     font-size: 28px;
+    color: #ccd6f6;
 }
 
 .title-SobreMi {
@@ -193,48 +196,11 @@ body {
 }
 
 /******** Seccion Lenguajes y Bibliotecas *********/
-.Habilidades {
-    width: 100%;
+.c-tecnologias{
+    margin-top: 20px;
+    margin-left: 18px;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 10px;
-    background-color: #fff;
-}
-
-.ctn-icons {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    gap: 60px;
-    flex-wrap: wrap;
-    padding: 20px;
-}
-
-.ctn-icons img {
-    width: 80px;
-}
-
-.Habilidades h2 {
-    font-size: 28px;
-    color: #26c8dd;
-}
-
-.iconos {
-    display: flex;
-    justify-content: space-evenly;
-    gap: 25px;
-}
-
-.t-icon{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-    color: black;
-    font-size: 18px;
-    font-weight: 700;
-    justify-content: center;
+    gap: 35px;
 }
 
 /************************ Seccion Proyectos ***********************/
@@ -243,6 +209,10 @@ body {
   flex-direction: column;
   align-items: center;
   gap: 10px;
+}
+
+.s_proyectos h2{
+    color: #ccd6f6;
 }
 
 .lista_proyectos{
@@ -277,6 +247,7 @@ body {
     text-align: center;
     padding: 5px;
     margin-top: 150px;
+    color: #ccd6f6;
 }
 
 .btn_proyecto{
@@ -313,19 +284,28 @@ body {
 /* Seccion Pie de pagina */
 footer{
     display: flex;
-    justify-content: space-around;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
+    gap: 150px;
     width: 100%;
-    height: 150px;
-    background-color:#485288fd;
 }
 
-footer .lista_enlaces_footer li a{
+footer section{
     display: flex;
     flex-direction: column;
-    gap: 10px;
-    color: #fff;
-    text-decoration: none;
+    align-items: center;
+    gap: 30px;
+}
+
+footer section h2{
+    font-size: 35px;
+    color: #ccd6f6;
+}
+
+footer span{
+    color: #8892b0;
+    padding: 17px;
 }
 
 /* ******************** MOD MOBILE ********************************** */
