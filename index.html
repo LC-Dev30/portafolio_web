@@ -9,146 +9,134 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="./variables.css">
+    <link rel="stylesheet" href="output.css">
 </head>
 
 <body>
 
-    < class="contenedor">
-        <!-- header cabezera -->
-        <header class="header" id="menu">
-            <nav class="nav">
-                <h2 class="title"><a class="title" href="#"></a></h2>
-                <button class="btn-open-toggle"><img src="/iconos/hamburger-icon.svg" alt=""></button>
-                <ul class="list-nav">
-                    <button class="btn-close-toggle"><img src="/iconos/close-icon.svg" alt=""></button>
-                    <li><a href="#acerca">ACERCA DE MI</a></li>
-                    <li><a href="#habilidades">HABILIDADES</a></li>
-                    <li><a href="#experiencias">EXPERIENCIAS</a></li>
-                    <li><a href="#contacto">CONTACTO</a></li>
+    <div class="flex flex-col items-center justify-center min-h-screen">
+        <!-- Header -->
+        <header class="flex justify-around py-4 w-full">
+            <div>
+                <img class="rounded-full h-20 w-20" src="./imagenes/logo.png" alt="">
+            </div>
+            <nav class="">
+                <ul class="flex gap-3 justify-center items-center p-2">
+                    <li class="hover:underline"><a href="/">Inicio</a></li>
+                    <li class="hover:underline"><a href="sobreMi">Sobre mi</a></li>
+                    <li class="hover:underline"><a href="proyectos">Proyectos</a></li>
+                    <li>
+                        <a href="./cv/LeoCV.pdf" target="_blank"
+                            class="mt-4 inline-block bg-blue-500 hover:bg-blue-600 text-white py-2 px-6 rounded-lg">Ver
+                            CV</a>
+                    </li>
                 </ul>
             </nav>
         </header>
-        <!-- contenido -->
-        <main class="main" id="main">
-
-            <!-- seccion perfil -->
-            <section class="profile">
-                <span class="saludo">Hola, mi nombre es</span>
-                <h1 class="nameDev">Leo Castillo.</h1>
-                <h3 class="">Desarrollador de Software.</h3>
-                <p class="parrafo">
-                    "Un buen desarrollador de software trabaja con disciplina y constancia desde el primer día."
-                   <cite> - Omar Bradley -</cite>
-                    <br>
-                </p>
-             
-                <a class="btn-cv" role="button" target="blank" href="./cv/CV_LC.pdf">ver cv</a>
-                <img class="img-inicio" src="./imagenes/img_inicio.svg" alt="">
-            </section>
-
-            <!-- seccion sobre mi -->
-            <section class="sobreMi">
-                <div class="title-SobreMi">
-                    <h3 id="acerca">Acerca de mí</h3>
+        <!-- Contenido -->
+        <main class="max-w-4xl w-full px-4">
+            <!-- Sección Perfil -->
+            <section class="flex flex-col gap-1 items-center text-center py-8">
+                <div>
+                    <img class="w-72 h-72 rounded-full" src="./imagenes/ft_perfil.jpeg" alt="">
                 </div>
-                <p>
-                    ¡Hola! Soy Leo, un apasionado estudiante de ingeniería de software,
-                    mi visión es utilizar mi pasión por la ingeniería de software para crear soluciones que no solo sean efectivas desde el punto de vista técnico, sino también significativas desde la perspectiva de la experiencia del usuario. 
-                    <br>
-                    <br>
-                    Estoy emocionado por las oportunidades que el futuro tiene reservadas y ansío contribuir a proyectos desafiantes que hagan una diferencia real en el mundo digital.
-                    <br>   
-                    <br>  
-                    <strong>
-                        ¡Estoy listo para enfrentar nuevos desafíos y ser parte de un equipo apasionado por la innovación tecnológica! 
-                    </strong>
+                <h2 class="text-xl font-semibold">Leo Castillo</h2>
+                <h1 class="text-3xl font-bold text-gray-800">Desarrollador Full Stack</h1>
+                <p class="text-gray-700 mt-4">"Un buen desarrollador de software trabaja con disciplina y constancia
+                    desde el primer día." <cite>- Omar Bradley -</cite></p>
+
+            </section>
+            <!-- Sección Sobre Mí -->
+            <section class="py-8">
+                <h2 id="acerca" class="text-2xl font-bold text-gray-800 mb-4">Acerca de mí</h2>
+                <p class="text-gray-700">
+                    ¡Hola! Soy Leo, un apasionado estudiante de ingeniería de software. Mi visión es utilizar mi pasión
+                    por la ingeniería de software para crear soluciones que no solo sean efectivas desde el punto de
+                    vista técnico, sino también significativas desde la perspectiva de la experiencia del usuario.
+                    <br><br>
+                    Estoy emocionado por las oportunidades que el futuro tiene reservadas y ansío contribuir a proyectos
+                    desafiantes que hagan una diferencia real en el mundo digital. <br><br>
+                    <strong>¡Estoy listo para enfrentar nuevos desafíos y ser parte de un equipo apasionado por la
+                        innovación tecnológica!</strong>
                 </p>
-
-                <!-- seccion tecnologias -->
-                <section class="seccion-tecnologias">
-                 <span>Algunas tecnologías que he estado trabajando:</span>
-                <section class="c-tecnologias">
-                    <!-- front end -->
-                    <div>
-                        <span>Frontend</span>
-                        <ul class="lista-tecnologias">
-                            <li>Javascript</li>
-                            <li>React</li>
+            </section>
+            <!-- Sección Tecnologías -->
+            <section class="py-8">
+                <h3 class="text-xl font-bold text-gray-800 mb-4">Tecnologías que he estado trabajando</h3>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    <!-- Frontend -->
+                    <div class="bg-white p-4 rounded-lg shadow-md">
+                        <h4 class="text-lg font-semibold text-gray-800 mb-2">Frontend</h4>
+                        <ul class="text-gray-700">
+                            <li>JavaScript</li>
                             <li>TypeScript</li>
+                            <li>React</li>
                         </ul>
                     </div>
-                    <!-- back end -->
-                    <div>
-                        <span>Backend</span>
-                        <ul class="lista-tecnologias">
-                            <li>Asp .NET</li>
+                    <!-- Backend -->
+                    <div class="bg-white p-4 rounded-lg shadow-md">
+                        <h4 class="text-lg font-semibold text-gray-800 mb-2">Backend</h4>
+                        <ul class="text-gray-700">
+                            <li>ASP .NET</li>
                             <li>Node con Express</li>
+                            <li>Python</li>
                         </ul>
                     </div>
-                    <!-- base de datos -->
-                    <div>
-                        <span>Base de datos</span>
-                        <ul class="lista-tecnologias">
+                    <!-- Base de Datos -->
+                    <div class="bg-white p-4 rounded-lg shadow-md">
+                        <h4 class="text-lg font-semibold text-gray-800 mb-2">Base de datos</h4>
+                        <ul class="text-gray-700">
                             <li>SQL Server</li>
-                            <li>Mongo db</li>
+                            <li>MongoDB</li>
+                            <li>PostgreSQL</li>
                         </ul>
                     </div>
-                </section>
-                </section>
+                </div>
             </section>
-
-            <section class="s_proyectos">
-                <h2 id="experiencias">Proyectos</h2>
-                <ul class="lista_proyectos">
-                    <li>
-                       <div style="background-image: url('./imagenes/img_tareas.png');">
-                         <h3>Aplicacion de tarea</h3>
-                       </div>
-                       <a href="https://lc-dev30.github.io/app_tareas" target="_blank" class="btn_proyecto">Ver proyecto</a>
-                    </li>
-                    <li>
-                        <div style="background-image: url('./imagenes/img_clima.jpg');">
-                           <h3>Aplicacion Metereologica</h3>
+            <!-- Sección Proyectos -->
+            <section class="py-8">
+                <h2 id="experiencias" class="text-2xl font-bold text-gray-800 mb-4">Proyectos</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <!-- Proyecto 1 -->
+                    <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                        <img src="./imagenes/img_tareas.png" alt="Proyecto Tareas" class="w-full h-64 object-cover">
+                        <div class="p-4">
+                            <h3 class="text-lg font-semibold text-gray-800">Aplicación de Tareas</h3>
+                            <a href="https://lc-dev30.github.io/app_tareas" target="_blank"
+                                class="block text-blue-500 hover:text-blue-600 mt-2">Ver proyecto</a>
                         </div>
-                        <a href="#" target="_blank" class="btn_proyecto">Ver proyecto</a>
-                    </li>
-                    <li>
-                        <div style="background-image: url('./imagenes/tiendas-online.png');">
-                          <h3>Tienda Online</h3>
+                    </div>
+                    <!-- Proyecto 2 -->
+                    <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                        <img src="./imagenes/img_clima.jpg" alt="Proyecto Clima" class="w-full h-64 object-cover">
+                        <div class="p-4">
+                            <h3 class="text-lg font-semibold text-gray-800">Aplicación Meteorológica</h3>
+                            <a href="#" class="block text-blue-500 hover:text-blue-600 mt-2">Ver proyecto</a>
                         </div>
-                        <a href="#" class="btn_proyecto">Ver proyecto</a>
-                    </li>
-                    <li>
-                        <div style="background-image: url('./imagenes/img_peliculas.jpg');">
-                          <h3>Sitio web de peliculas</h3>
-                        </div>
-                        <a href="#" class="btn_proyecto">Ver proyecto</a>
-                    </li>
-                </ul>
+                    </div>
+                </div>
             </section>
-
-            <!-- Footer -->
-            <footer>
-                <section class="seccion-contacto">
-                    <h2>¡Contáctame!"</h2>
-                    <article class="c-contacto">
-                       <div>
-                          <img src="./imagenes/telefono.png" alt="">
-                          <span>+1(829-430-0830)</span>
-                       </div>
-                       <div>
-                         <img src="./imagenes/email.png" alt="">
-                         <span>cristomiroca3005@gmail.com</span>
-                       </div>
-                    </article>
-                </section>
-                <span>Diseñado y construido por Leo Castillo</span>
-            </footer>
         </main>
+        <!-- Footer -->
+        <footer class="py-8">
+            <section class="seccion-contacto text-center">
+                <h2 class="text-2xl font-bold text-gray-800">¡Contáctame!</h2>
+                <article class="c-contacto">
+                    <div>
+                        <img src="./imagenes/telefono.png" alt="Teléfono" class="inline-block w-10">
+                        <span class="ml-2">+1(829-430-0830)</span>
+                    </div>
+                    <div class="mt-4">
+                        <img src="./imagenes/email.png" alt="Email" class="inline-block w-10">
+                        <span class="ml-2">cristomiroca3005@gmail.com</span>
+                    </div>
+                </article>
+            </section>
+            <span class="text-gray-600 block mt-4">Diseñado y construido por Leo Castillo</span>
+        </footer>
     </div>
-   
+
+
     <script src="/main.js"></script>
     <script src="https://kit.fontawesome.com/88b43d12f7.js" crossorigin="anonymous"></script>
 </body>
