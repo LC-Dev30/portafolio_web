@@ -22,9 +22,9 @@
             </div>
             <nav class="">
                 <ul class="flex gap-3 justify-center items-center p-2">
-                    <li class="hover:underline"><a href="/">Inicio</a></li>
-                    <li class="hover:underline"><a href="sobreMi">Sobre mi</a></li>
-                    <li class="hover:underline"><a href="proyectos">Proyectos</a></li>
+                    <li class="hover:underline"><a href="#sobreMi">Sobre mi</a></li>
+                    <li class="hover:underline"><a href="#proyectos">Proyectos</a></li>
+                    <li class="hover:underline"><a href="#contacto">Contacto</a></li>
                     <li>
                         <a href="./cv/LeoCV.pdf" target="_blank"
                             class="mt-4 inline-block bg-blue-500 hover:bg-blue-600 text-white py-2 px-6 rounded-lg">Ver
@@ -48,7 +48,7 @@
             </section>
             <!-- Sección Sobre Mí -->
             <section class="py-8">
-                <h2 id="acerca" class="text-2xl font-bold text-gray-800 mb-4">Acerca de mí</h2>
+                <h2 id="sobreMi" class="text-2xl font-bold text-gray-800 mb-4">Acerca de mí</h2>
                 <p class="text-gray-700">
                     ¡Hola! Soy Leo, un apasionado estudiante de ingeniería de software. Mi visión es utilizar mi pasión
                     por la ingeniería de software para crear soluciones que no solo sean efectivas desde el punto de
@@ -65,74 +65,118 @@
                 <h3 class="text-xl font-bold text-gray-800 mb-4">Tecnologías que he estado trabajando</h3>
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
                     <!-- Frontend -->
-                    <div class="bg-white p-4 rounded-lg shadow-md">
-                        <h4 class="text-lg font-semibold text-gray-800 mb-2">Frontend</h4>
-                        <ul class="text-gray-700">
-                            <li>JavaScript</li>
-                            <li>TypeScript</li>
-                            <li>React</li>
+                    <div class="bg-white p-4 rounded-lg">
+                        <h4 class="text-lg font-semibold text-gray-800 mb-2">FRONTEND</h4>
+                        <ul class="flex flex-col text-gray-700 gap-1">
+                            <li class="bg-yellow-300 rounded-full text-center text-white w-auto inline p-1">JavaScript
+                            </li>
+                            <li class="bg-cyan-900 rounded-full text-center text-white w-auto inline p-1">TypeScript
+                            </li>
+                            <li class="bg-blue-400 rounded-full text-center text-white w-auto inline p-1">React</li>
                         </ul>
                     </div>
                     <!-- Backend -->
-                    <div class="bg-white p-4 rounded-lg shadow-md">
-                        <h4 class="text-lg font-semibold text-gray-800 mb-2">Backend</h4>
-                        <ul class="text-gray-700">
-                            <li>ASP .NET</li>
-                            <li>Node con Express</li>
-                            <li>Python</li>
+                    <div class="bg-white p-4 rounded-lg">
+                        <h4 class="text-lg font-semibold text-gray-800 mb-2">BACKEND</h4>
+                        <ul class="flex flex-col text-gray-700 gap-1">
+                            <li class="bg-blue-900 rounded-full text-center text-white w-auto inline p-1">ASP .NET</li>
+                            <li class="bg-lime-700 rounded-full text-center text-white w-auto inline p-1">Node.js</li>
+                            <li class="bg-yellow-200 rounded-full text-center text-white w-auto inline p-1">Python</li>
                         </ul>
                     </div>
                     <!-- Base de Datos -->
-                    <div class="bg-white p-4 rounded-lg shadow-md">
-                        <h4 class="text-lg font-semibold text-gray-800 mb-2">Base de datos</h4>
-                        <ul class="text-gray-700">
-                            <li>SQL Server</li>
-                            <li>MongoDB</li>
-                            <li>PostgreSQL</li>
+                    <div class="bg-white p-4">
+                        <h4 class="text-lg font-semibold text-gray-800 mb-2">BASE DE DATOS</h4>
+                        <ul class="flex flex-col text-gray-700 gap-1">
+                            <li class="bg-slate-300 rounded-full text-center text-white w-auto inline p-1">SQL Server
+                            </li>
+                            <li class="bg-cyan-600 rounded-full text-center text-white w-auto inline p-1">PostGreSQL
+                            </li>
+                            <li class="bg-orange-400 rounded-full text-center text-white w-auto inline p-1">MySQL</li>
                         </ul>
                     </div>
                 </div>
             </section>
             <!-- Sección Proyectos -->
-            <section class="py-8">
-                <h2 id="experiencias" class="text-2xl font-bold text-gray-800 mb-4">Proyectos</h2>
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <section id="proyectos" class="py-8">
+                <h2 class="text-2xl font-bold text-gray-800 mb-4 text-center">Proyectos</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mx-auto max-w-6xl">
                     <!-- Proyecto 1 -->
-                    <div class="bg-white rounded-lg shadow-md overflow-hidden">
-                        <img src="./imagenes/img_tareas.png" alt="Proyecto Tareas" class="w-full h-64 object-cover">
-                        <div class="p-4">
-                            <h3 class="text-lg font-semibold text-gray-800">Aplicación de Tareas</h3>
-                            <a href="https://lc-dev30.github.io/app_tareas" target="_blank"
-                                class="block text-blue-500 hover:text-blue-600 mt-2">Ver proyecto</a>
+                    <div
+                        class="bg-white flex flex-col justify-between gap-3 hover:outline outline-zinc-100 rounded-lg p-4">
+                        <h2 class="text-xl font-bold mb-2">Blog</h2>
+                        <ul class="text-gray-700">
+                            <li class="border border-green-700 text-green-700 inline rounded-md p-1 mb-1">Node.js</li>
+                            <li class="border border-sky-500 text-sky-500 inline rounded-md p-1 mb-1">React</li>
+                        </ul>
+                        <p class="text-gray-700 mb-3">What's a policy? What's a gate? It can be difficult understanding
+                            the difference between the two. Let's go over which does what and how to apply them to your
+                            Laravel app.</p>
+                        <div class="flex gap-3">
+                            <a target="_blank" class="text-cyan-600 text-md hover:underline"
+                                href="https://github.com/LC-Dev30/app_tareas">Ver código</a>
+                            <a target="_blank" class="text-cyan-600 text-md hover:underline"
+                                href="https://lc-dev30.github.io/app_tareas">Ver página</a>
                         </div>
                     </div>
                     <!-- Proyecto 2 -->
-                    <div class="bg-white rounded-lg shadow-md overflow-hidden">
-                        <img src="./imagenes/img_clima.jpg" alt="Proyecto Clima" class="w-full h-64 object-cover">
-                        <div class="p-4">
-                            <h3 class="text-lg font-semibold text-gray-800">Aplicación Meteorológica</h3>
-                            <a href="#" class="block text-blue-500 hover:text-blue-600 mt-2">Ver proyecto</a>
+                    <div
+                        class="bg-white flex flex-col justify-between gap-3 hover:outline outline-zinc-100 rounded-lg p-4">
+                        <h2 class="text-xl font-bold mb-2">API de Productos</h2>
+                        <ul class="text-gray-700">
+                            <li class="border border-indigo-600 text-indigo-600 inline rounded-md p-1 mb-1">.NET</li>
+                            <li class="border border-gray-500 text-gray-500 inline rounded-md p-1 mb-1">SQL Server</li>
+                        </ul>
+                        <p class="text-gray-500 mb-3">What's a policy? What's a gate? It can be difficult understanding
+                            the difference between the two. Let's go over which does what and how to apply them to your
+                            Laravel app.</p>
+                        <div class="flex gap-3">
+                            <a target="_blank" class="text-cyan-600 text-md hover:underline"
+                                href="https://github.com/LC-Dev30/app_tareas">Ver código</a>
+                            <a target="_blank" class="text-cyan-600 text-md hover:underline"
+                                href="https://lc-dev30.github.io/app_tareas">Ver página</a>
                         </div>
                     </div>
+                    <!-- Proyecto 2 -->
+                    <div
+                        class="bg-white flex flex-col justify-between gap-3 hover:outline outline-zinc-100 rounded-lg p-4">
+                        <h2 class="text-xl font-bold mb-2">Sistema de Facturacion</h2>
+                        <ul class="text-gray-700">
+                            <li class="border border-indigo-600 text-indigo-600 inline rounded-md p-1 mb-1">.NET</li>
+                            <li class="border border-gray-500 text-gray-500 inline rounded-md p-1 mb-1">SQL Server</li>
+                        </ul>
+                        <p class="text-gray-700 mb-3">What's a policy? What's a gate? It can be difficult understanding
+                            the difference between the two. Let's go over which does what and how to apply them to your
+                            Laravel app.</p>
+                        <div class="flex gap-3">
+                            <a target="_blank" class="text-cyan-600 text-md hover:underline"
+                                href="https://github.com/LC-Dev30/app_tareas">Ver código</a>
+                            <a target="_blank" class="text-cyan-600 text-md hover:underline"
+                                href="https://lc-dev30.github.io/app_tareas">Ver página</a>
+                        </div>
+                    </div>
+
                 </div>
             </section>
+
         </main>
         <!-- Footer -->
         <footer class="py-8">
-            <section class="seccion-contacto text-center">
-                <h2 class="text-2xl font-bold text-gray-800">¡Contáctame!</h2>
-                <article class="c-contacto">
-                    <div>
+            <section class="flex flex-col gap-5 items-center">
+                <h2 class="text-2xl text-center font-bold">Siguiente paso</h2>
+                <article id="contacto" class="md:flex gap-5">
+                    <div class="flex md:mb-0 mb-4">
                         <img src="./imagenes/telefono.png" alt="Teléfono" class="inline-block w-10">
-                        <span class="ml-2">+1(829-430-0830)</span>
+                        <span class="ml-2">+1 (829-430-0830)</span>
                     </div>
-                    <div class="mt-4">
+                    <div class="flex md:mb-0 mb-4">
                         <img src="./imagenes/email.png" alt="Email" class="inline-block w-10">
                         <span class="ml-2">cristomiroca3005@gmail.com</span>
                     </div>
                 </article>
+
+                <span class="text-gray-600 block mt-4">Diseñado y construido por Leo Castillo</span>
             </section>
-            <span class="text-gray-600 block mt-4">Diseñado y construido por Leo Castillo</span>
         </footer>
     </div>
 
