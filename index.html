@@ -44,7 +44,7 @@
                 <div>
                     <img class="w-72 h-72 rounded-full" src="./imagenes/ft_perfil.jpeg" alt="">
                 </div>
-                <h2 class="text-xl font-semibold text-gray-800">Leo Castillo</h2>
+                <h2 class="text-xl font-semibold text-gray-800" id="name"></h2>
                 <h1 class="text-3xl font-bold text-gray-800">Desarrollador Full Stack</h1>
                 <p class="text-gray-700 mt-4">"Un buen desarrollador de software trabaja con disciplina y constancia
                     desde el primer día." <cite>- Omar Bradley -</cite></p>
@@ -143,10 +143,10 @@
                             esta API permite a los usuarios realizar diversas acciones, como, buscar artículos por categoría, tambien cuenta con un panel de admin, y manejo de autenticacion con jwt entre otras cosas.
                         </p>
                         <div class="flex gap-3">
-                            <a target="_blank" class="text-cyan-600 text-md hover:underline"
-                                href="https://github.com/LC-Dev30/app_tareas">Ver código</a>
-                            <a target="_blank" class="text-cyan-600 text-md hover:underline"
-                                href="https://lc-dev30.github.io/app_tareas">Ver página</a>
+                            <!-- <a target="_blank" class="text-cyan-600 text-md hover:underline"
+                                href="https://lc-dev30.github.io/app_tareas">Ver sitio</a> -->
+                            <a target="_blank" class="text-slate-800 text-md hover:underline"
+                                href="https://github.com/LC-Dev30/blog-api">Github</a>
                         </div>
                     </div>
                     <!-- Proyecto 2 -->
@@ -161,12 +161,12 @@
                             La API de productos en C# es una aplicación diseñada para proporcionar funcionalidades de consulta y gestión de productos a través de HTTP. Utiliza el framework ASP.NET Core,
                         </p>
                         <div class="flex gap-3">
-                            <a target="_blank" class="text-cyan-600 text-md hover:underline"
-                                href="https://github.com/LC-Dev30/api_products">Ver código</a>
+                            <a target="_blank" class="text-slate-800 text-md hover:underline"
+                                href="https://github.com/LC-Dev30/api_products">Github</a>
                         </div>
                     </div>
-                    <!-- Proyecto 2 -->
-                    <div
+                    <!-- Proyecto 3 -->
+                    <!-- <div
                         class="bg-white flex flex-col justify-between gap-3 hover:outline outline-zinc-100 rounded-lg p-4">
                         <h2 class="text-xl font-bold mb-2 text-gray-800">Sistema de Facturacion</h2>
                         <ul class="text-gray-700">
@@ -178,11 +178,11 @@
                             Laravel app.</p>
                         <div class="flex gap-3">
                             <a target="_blank" class="text-cyan-600 text-md hover:underline"
-                                href="https://github.com/LC-Dev30/app_tareas">Ver código</a>
-                            <a target="_blank" class="text-cyan-600 text-md hover:underline"
-                                href="https://lc-dev30.github.io/app_tareas">Ver página</a>
+                                href="https://lc-dev30.github.io/app_tareas">Ver sitio</a>
+                            <a target="_blank" class="text-slate-800 text-md hover:underline"
+                                href="https://github.com/LC-Dev30/app_tareas">Github</a>
                         </div>
-                    </div>
+                    </div> -->
 
                 </div>
             </section>
@@ -206,9 +206,11 @@
                 <span class="text-gray-600 block mt-4">Diseñado y construido por Leo Castillo</span>
             </section>
         </footer>
+        
     </div>
     <script>
         document.addEventListener("DOMContentLoaded", function() {
+        document.getElementById('name').innerText = '<>Leo Castillo</>'
             const menuButton = document.getElementById('menuToggle');
             const menuList = document.getElementById('menuList');
             menuButton.addEventListener('click', function() {
